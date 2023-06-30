@@ -393,3 +393,41 @@ button:focus {
   height: 2px;
   background-color: var(--color-accent);
 }
+
+/* Testimonials */
+.testimonials {
+  margin: 3rem;
+}
+
+.testimonial {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+/* 짝수번째 이미지 순서 바꾸기 */
+.testimonial:nth-child(even) .testimonial__img {
+  order: 1;
+}
+
+.testimonial__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: 0px 4px 16px rgba(17, 17, 26, 0.1),
+    0px 8px 24px rgba(17, 17, 26, 0.1), 0px 16px 56px rgba(17, 17, 26, 0.1);
+}
+
+.testimonial__bubble {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble__name {
+  color: var(--color-accent);
+  font-weight: bold;
+  filter: brightness(70%);
+}
