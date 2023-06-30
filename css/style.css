@@ -53,6 +53,22 @@ button:focus {
   outline: 1px solid var(--color-accent);
 }
 
+/* Common */
+.section {
+  padding: 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
 /* Header */
 .header {
   /* position: fixed; */
@@ -143,6 +159,8 @@ button:focus {
 
 .home__contact:hover {
   background-color: transparent;
+  /* contact블럭에 사이즈를 지정하지 않았기에
+  보더가 생기면서 밀리는 현상을 없애기 위해 사용 */
   outline: 2px solid var(--color-accent);
   color: var(--color-text);
 }
