@@ -128,7 +128,9 @@ button:focus {
 }
 
 .header__menu_item {
+  display: block;
   padding: 8px 16px;
+  border-bottom: 1px solid transparent;
 }
 
 .header__menu_item:hover {
@@ -488,7 +490,7 @@ button:focus {
 /* Media Screen */
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
 
   .title {
@@ -513,7 +515,7 @@ button:focus {
     display: none;
     flex-direction: column;
     text-align: center;
-    padding: 1rem 4rem;
+    margin: 1rem 4rem;
     gap: 1rem;
   }
 
