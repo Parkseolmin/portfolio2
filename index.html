@@ -36,6 +36,7 @@
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
     <style>
       /* font-family: "Playfair Display", serif; */
       /* font-family: "Roboto", sans-serif; */
@@ -56,14 +57,24 @@
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a class="header__menu_item active" href="#home">Home</a></li>
-          <li><a class="header__menu_item" href="#about">About</a></li>
-          <li><a class="header__menu_item" href="#skills">Skills</a></li>
-          <li><a class="header__menu_item" href="#work">My work</a></li>
+          <li>
+            <a class="header__menu_item active" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="header__menu_item" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__menu_item" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="header__menu_item" href="#work">My work</a>
+          </li>
           <li>
             <a class="header__menu_item" href="#testimonial">Testimonial</a>
           </li>
-          <li><a class="header__menu_item" href="#contact">Contact</a></li>
+          <li>
+            <a class="header__menu_item" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -481,5 +492,7 @@
         <p>&#169;Dream Coding Seolmin - All right reserved</p>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </body>
 </html>
