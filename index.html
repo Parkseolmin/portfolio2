@@ -33,6 +33,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Javascript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
     <style>
       /* font-family: "Playfair Display", serif; */
       /* font-family: "Roboto", sans-serif; */
@@ -241,29 +244,32 @@
           <!-- Projects button -->
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="all">
                 All <span class="category__count">8</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Front-end <span class="category__count">3</span>
+              <button class="category" data-category="front-end">
+                Front-end
+                <span class="category__count">4</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                React <span class="category__count">3</span>
+              <button class="category" data-category="react">
+                React
+                <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Mobile <span class="category__count">2</span>
+              <button class="category" data-category="mobile">
+                Mobile
+                <span class="category__count">1</span>
               </button>
             </li>
           </ul>
           <!-- Projects individual -->
           <ul class="projects">
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="img/projects/project1.webp"
@@ -276,7 +282,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="img/projects/project2.webp"
@@ -289,7 +295,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="react">
               <a href="#" target="_blank">
                 <img
                   src="img/projects/project3.webp"
@@ -302,7 +308,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
                   src="img/projects/project4.webp"
@@ -315,7 +321,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="img/projects/project5.webp"
@@ -328,7 +334,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="react">
               <a href="#" target="_blank">
                 <img
                   src="img/projects/project6.webp"
@@ -341,7 +347,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="react">
               <a href="#" target="_blank">
                 <img
                   src="img/projects/project7.webp"
@@ -354,7 +360,7 @@
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
                   src="img/projects/project8.webp"
@@ -475,7 +481,5 @@
         <p>&#169;Dream Coding Seolmin - All right reserved</p>
       </div>
     </footer>
-    <!-- Javascript -->
-    <script src="src/main.js" defer></script>
   </body>
 </html>
